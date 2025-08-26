@@ -10,7 +10,7 @@
   print("Keliling: $Keliling");
 }*/
 
-void main(List<String> args) {
+/*void main(List<String> args) {
   List Buah = ["Apel", "Pisang", "Pir", "Rambutan", "Semangka"];
   print(Buah);
   print(Buah[0]);
@@ -21,4 +21,22 @@ void main(List<String> args) {
   Buah.addAll(["Semangka", "Apel"]);
   print(Buah.indexOf('Pir'));
   print(Buah.indexOf(Buah[3] = "Pir"));
+}*/
+
+import 'dart:io';
+
+void main(List<String> args) {
+  String? name;
+  int? usia;
+
+  stdout.write("Masukkan Nama: ");
+  name = stdin.readLineSync();
+
+  stdout.write("Masukkan Usia: ");
+
+  usia = int.parse(stdin.readLineSync()!);
+
+  print(usia);
+
+  print(name);
 }
